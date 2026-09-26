@@ -1,0 +1,2928 @@
+[
+  {
+    "symbol": "0GUSDT",
+    "rows": 370,
+    "first_day": "2025-09-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "1000CATUSDT",
+    "rows": 649,
+    "first_day": "2024-12-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "1000CHEEMSUSDT",
+    "rows": 595,
+    "first_day": "2025-02-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "1000SATSUSDT",
+    "rows": 1020,
+    "first_day": "2023-12-12",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "1INCHUSDT",
+    "rows": 2102,
+    "first_day": "2020-12-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "1MBABYDOGEUSDT",
+    "rows": 741,
+    "first_day": "2024-09-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "2ZUSDT",
+    "rows": 360,
+    "first_day": "2025-10-02",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AAOIBUSDT",
+    "rows": 74,
+    "first_day": "2026-07-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AAPLBUSDT",
+    "rows": 60,
+    "first_day": "2026-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AAVEUSDT",
+    "rows": 2173,
+    "first_day": "2020-10-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ACEUSDT",
+    "rows": 1014,
+    "first_day": "2023-12-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ACHUSDT",
+    "rows": 1721,
+    "first_day": "2022-01-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ACMUSDT",
+    "rows": 2041,
+    "first_day": "2021-02-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ACTUSDT",
+    "rows": 685,
+    "first_day": "2024-11-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "rows": 3085,
+    "first_day": "2018-04-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ADXUSDT",
+    "rows": 1794,
+    "first_day": "2021-10-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AEROUSDT",
+    "rows": 72,
+    "first_day": "2026-07-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AEVOUSDT",
+    "rows": 928,
+    "first_day": "2024-03-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AGLDUSDT",
+    "rows": 1818,
+    "first_day": "2021-10-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AGPUBUSDT",
+    "rows": 4,
+    "first_day": "2026-09-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AIGENSYNUSDT",
+    "rows": 136,
+    "first_day": "2026-05-14",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AIUSDT",
+    "rows": 997,
+    "first_day": "2024-01-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AIXBTUSDT",
+    "rows": 625,
+    "first_day": "2025-01-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ALABBUSDT",
+    "rows": 53,
+    "first_day": "2026-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ALGOUSDT",
+    "rows": 2654,
+    "first_day": "2019-06-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ALICEUSDT",
+    "rows": 2022,
+    "first_day": "2021-03-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ALLOUSDT",
+    "rows": 320,
+    "first_day": "2025-11-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ALPINEUSDT",
+    "rows": 1679,
+    "first_day": "2022-02-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ALTUSDT",
+    "rows": 976,
+    "first_day": "2024-01-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AMATBUSDT",
+    "rows": 60,
+    "first_day": "2026-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AMCBUSDT",
+    "rows": 4,
+    "first_day": "2026-09-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AMDBUSDT",
+    "rows": 96,
+    "first_day": "2026-06-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AMPUSDT",
+    "rows": 1769,
+    "first_day": "2021-11-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AMZNBUSDT",
+    "rows": 60,
+    "first_day": "2026-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ANIMEUSDT",
+    "rows": 612,
+    "first_day": "2025-01-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ANKRUSDT",
+    "rows": 2623,
+    "first_day": "2019-07-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "APEUSDT",
+    "rows": 1655,
+    "first_day": "2022-03-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "API3USDT",
+    "rows": 1710,
+    "first_day": "2022-01-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "APTUSDT",
+    "rows": 1439,
+    "first_day": "2022-10-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ARBUSDT",
+    "rows": 1284,
+    "first_day": "2023-03-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ARKMUSDT",
+    "rows": 1167,
+    "first_day": "2023-07-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ARKUSDT",
+    "rows": 1101,
+    "first_day": "2023-09-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ARMBUSDT",
+    "rows": 74,
+    "first_day": "2026-07-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ARPAUSDT",
+    "rows": 2517,
+    "first_day": "2019-11-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ARUSDT",
+    "rows": 1962,
+    "first_day": "2021-05-14",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ASMLBUSDT",
+    "rows": 53,
+    "first_day": "2026-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ASRUSDT",
+    "rows": 2097,
+    "first_day": "2020-12-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ASTERUSDT",
+    "rows": 356,
+    "first_day": "2025-10-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ASTRUSDT",
+    "rows": 1672,
+    "first_day": "2022-02-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ASTSBUSDT",
+    "rows": 53,
+    "first_day": "2026-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ATMUSDT",
+    "rows": 2097,
+    "first_day": "2020-12-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ATOMUSDT",
+    "rows": 2708,
+    "first_day": "2019-04-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ATUSDT",
+    "rows": 304,
+    "first_day": "2025-11-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AUCTIONUSDT",
+    "rows": 1794,
+    "first_day": "2021-10-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AUDIOUSDT",
+    "rows": 2165,
+    "first_day": "2020-10-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AUSDT",
+    "rows": 487,
+    "first_day": "2025-05-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AVAUSDT",
+    "rows": 2133,
+    "first_day": "2020-11-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "rows": 2196,
+    "first_day": "2020-09-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AVGOBUSDT",
+    "rows": 74,
+    "first_day": "2026-07-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AVNTUSDT",
+    "rows": 377,
+    "first_day": "2025-09-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AWEUSDT",
+    "rows": 494,
+    "first_day": "2025-05-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AXLUSDT",
+    "rows": 940,
+    "first_day": "2024-03-01",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AXSUSDT",
+    "rows": 2153,
+    "first_day": "2020-11-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "AXTIBUSDT",
+    "rows": 67,
+    "first_day": "2026-07-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BABABUSDT",
+    "rows": 74,
+    "first_day": "2026-07-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BABYUSDT",
+    "rows": 535,
+    "first_day": "2025-04-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BANANAS31USDT",
+    "rows": 549,
+    "first_day": "2025-03-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BANANAUSDT",
+    "rows": 799,
+    "first_day": "2024-07-20",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BANDUSDT",
+    "rows": 2566,
+    "first_day": "2019-09-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BANKUSDT",
+    "rows": 318,
+    "first_day": "2025-11-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BARDUSDT",
+    "rows": 374,
+    "first_day": "2025-09-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BARUSDT",
+    "rows": 1985,
+    "first_day": "2021-04-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BATUSDT",
+    "rows": 2764,
+    "first_day": "2019-03-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BBUSDT",
+    "rows": 867,
+    "first_day": "2024-05-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BCHUSDT",
+    "rows": 2495,
+    "first_day": "2019-11-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BEAMXUSDT",
+    "rows": 1048,
+    "first_day": "2023-11-14",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BEBUSDT",
+    "rows": 60,
+    "first_day": "2026-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BELUSDT",
+    "rows": 2203,
+    "first_day": "2020-09-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BERAUSDT",
+    "rows": 598,
+    "first_day": "2025-02-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BFUSDUSDT",
+    "rows": 410,
+    "first_day": "2025-08-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BICOUSDT",
+    "rows": 1753,
+    "first_day": "2021-12-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BIGTIMEUSDT",
+    "rows": 534,
+    "first_day": "2025-04-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BIOUSDT",
+    "rows": 632,
+    "first_day": "2025-01-03",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BLURUSDT",
+    "rows": 1038,
+    "first_day": "2023-11-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BMNRBUSDT",
+    "rows": 53,
+    "first_day": "2026-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BMTUSDT",
+    "rows": 558,
+    "first_day": "2025-03-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BNBUSDT",
+    "rows": 3247,
+    "first_day": "2017-11-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BNCBUSDT",
+    "rows": 13,
+    "first_day": "2026-09-14",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BNSOLUSDT",
+    "rows": 710,
+    "first_day": "2024-10-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BNTUSDT",
+    "rows": 2425,
+    "first_day": "2020-02-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BOMEUSDT",
+    "rows": 925,
+    "first_day": "2024-03-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BONKUSDT",
+    "rows": 1017,
+    "first_day": "2023-12-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BREVUSDT",
+    "rows": 264,
+    "first_day": "2026-01-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BROCCOLI714USDT",
+    "rows": 549,
+    "first_day": "2025-03-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "rows": 3328,
+    "first_day": "2017-08-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "BTTCUSDT",
+    "rows": 1706,
+    "first_day": "2022-01-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "C98USDT",
+    "rows": 1892,
+    "first_day": "2021-07-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CAKEUSDT",
+    "rows": 2046,
+    "first_day": "2021-02-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CATIUSDT",
+    "rows": 737,
+    "first_day": "2024-09-20",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CBRSBUSDT",
+    "rows": 82,
+    "first_day": "2026-07-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CELOUSDT",
+    "rows": 2091,
+    "first_day": "2021-01-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CELRUSDT",
+    "rows": 2743,
+    "first_day": "2019-03-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CETUSUSDT",
+    "rows": 690,
+    "first_day": "2024-11-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CFGUSDT",
+    "rows": 195,
+    "first_day": "2026-03-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CFXUSDT",
+    "rows": 2008,
+    "first_day": "2021-03-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CGPTUSDT",
+    "rows": 625,
+    "first_day": "2025-01-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CHIPUSDT",
+    "rows": 159,
+    "first_day": "2026-04-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CHRUSDT",
+    "rows": 2334,
+    "first_day": "2020-05-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CHZUSDT",
+    "rows": 2578,
+    "first_day": "2019-09-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CITYUSDT",
+    "rows": 1782,
+    "first_day": "2021-11-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CKBUSDT",
+    "rows": 2070,
+    "first_day": "2021-01-26",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "COHRBUSDT",
+    "rows": 53,
+    "first_day": "2026-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "COINBUSDT",
+    "rows": 82,
+    "first_day": "2026-07-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "COMPUSDT",
+    "rows": 2285,
+    "first_day": "2020-06-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "COOKIEUSDT",
+    "rows": 625,
+    "first_day": "2025-01-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "COTIUSDT",
+    "rows": 2405,
+    "first_day": "2020-02-26",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "COWUSDT",
+    "rows": 690,
+    "first_day": "2024-11-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CRCLBUSDT",
+    "rows": 108,
+    "first_day": "2026-06-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CRDOBUSDT",
+    "rows": 53,
+    "first_day": "2026-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CRMBUSDT",
+    "rows": 18,
+    "first_day": "2026-09-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CRVUSDT",
+    "rows": 2234,
+    "first_day": "2020-08-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CRWDBUSDT",
+    "rows": 25,
+    "first_day": "2026-09-02",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CRWVBUSDT",
+    "rows": 67,
+    "first_day": "2026-07-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CTKUSDT",
+    "rows": 2161,
+    "first_day": "2020-10-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CTSIUSDT",
+    "rows": 2348,
+    "first_day": "2020-04-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CUSDT",
+    "rows": 436,
+    "first_day": "2025-07-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CVCUSDT",
+    "rows": 2435,
+    "first_day": "2019-08-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CVXUSDT",
+    "rows": 1739,
+    "first_day": "2021-12-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CYBERUSDT",
+    "rows": 1139,
+    "first_day": "2023-08-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "CYPHBUSDT",
+    "rows": 4,
+    "first_day": "2026-09-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DASHUSDT",
+    "rows": 2740,
+    "first_day": "2019-03-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DCRUSDT",
+    "rows": 2250,
+    "first_day": "2020-07-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DELLBUSDT",
+    "rows": 60,
+    "first_day": "2026-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DEXEUSDT",
+    "rows": 1892,
+    "first_day": "2021-07-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DGBUSDT",
+    "rows": 2260,
+    "first_day": "2020-07-20",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DIAUSDT",
+    "rows": 2214,
+    "first_day": "2020-09-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DJTBUSDT",
+    "rows": 32,
+    "first_day": "2026-08-26",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DODOUSDT",
+    "rows": 2046,
+    "first_day": "2021-02-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "rows": 2641,
+    "first_day": "2019-07-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DOGSUSDT",
+    "rows": 762,
+    "first_day": "2024-08-26",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DOLOUSDT",
+    "rows": 396,
+    "first_day": "2025-08-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DOTUSDT",
+    "rows": 2231,
+    "first_day": "2020-08-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DRAMBUSDT",
+    "rows": 82,
+    "first_day": "2026-07-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DUSKUSDT",
+    "rows": 2624,
+    "first_day": "2019-07-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DYDXUSDT",
+    "rows": 1844,
+    "first_day": "2021-09-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "DYMUSDT",
+    "rows": 964,
+    "first_day": "2024-02-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "EDENUSDT",
+    "rows": 362,
+    "first_day": "2025-09-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "EDUUSDT",
+    "rows": 1248,
+    "first_day": "2023-04-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "EGLDUSDT",
+    "rows": 2215,
+    "first_day": "2020-09-03",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "EIGENUSDT",
+    "rows": 726,
+    "first_day": "2024-10-01",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ENAUSDT",
+    "rows": 908,
+    "first_day": "2024-04-02",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ENJUSDT",
+    "rows": 2719,
+    "first_day": "2019-04-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ENSOUSDT",
+    "rows": 348,
+    "first_day": "2025-10-14",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ENSUSDT",
+    "rows": 1782,
+    "first_day": "2021-11-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "EPICUSDT",
+    "rows": 563,
+    "first_day": "2025-03-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ERAUSDT",
+    "rows": 437,
+    "first_day": "2025-07-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ESPUSDT",
+    "rows": 227,
+    "first_day": "2026-02-12",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ETCUSDT",
+    "rows": 3029,
+    "first_day": "2018-06-12",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ETHFIUSDT",
+    "rows": 923,
+    "first_day": "2024-03-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "rows": 3328,
+    "first_day": "2017-08-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "EULUSDT",
+    "rows": 349,
+    "first_day": "2025-10-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "EURIUSDT",
+    "rows": 760,
+    "first_day": "2024-08-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "EWYBUSDT",
+    "rows": 96,
+    "first_day": "2026-06-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FETUSDT",
+    "rows": 2768,
+    "first_day": "2019-02-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FFUSDT",
+    "rows": 363,
+    "first_day": "2025-09-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FIDAUSDT",
+    "rows": 1823,
+    "first_day": "2021-09-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FILUSDT",
+    "rows": 2173,
+    "first_day": "2020-10-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FLNCBUSDT",
+    "rows": 60,
+    "first_day": "2026-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FLOKIUSDT",
+    "rows": 1241,
+    "first_day": "2023-05-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FLOWUSDT",
+    "rows": 1885,
+    "first_day": "2021-07-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FLUXUSDT",
+    "rows": 1752,
+    "first_day": "2021-12-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FOGOUSDT",
+    "rows": 255,
+    "first_day": "2026-01-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FORMUSDT",
+    "rows": 557,
+    "first_day": "2025-03-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FRAXUSDT",
+    "rows": 255,
+    "first_day": "2026-01-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FTTUSDT",
+    "rows": 2163,
+    "first_day": "2019-12-20",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "FUSDT",
+    "rows": 337,
+    "first_day": "2025-10-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GALAUSDT",
+    "rows": 1840,
+    "first_day": "2021-09-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GASUSDT",
+    "rows": 1290,
+    "first_day": "2023-03-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GENIUSUSDT",
+    "rows": 128,
+    "first_day": "2026-05-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GIGGLEUSDT",
+    "rows": 337,
+    "first_day": "2025-10-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GLMRUSDT",
+    "rows": 1720,
+    "first_day": "2022-01-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GLMUSDT",
+    "rows": 1290,
+    "first_day": "2023-03-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GLWBUSDT",
+    "rows": 82,
+    "first_day": "2026-07-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GMEBUSDT",
+    "rows": 46,
+    "first_day": "2026-08-12",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GMTUSDT",
+    "rows": 1663,
+    "first_day": "2022-03-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GMXUSDT",
+    "rows": 1453,
+    "first_day": "2022-10-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GNOUSDT",
+    "rows": 1854,
+    "first_day": "2021-08-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GNSUSDT",
+    "rows": 1318,
+    "first_day": "2023-02-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GOOGLBUSDT",
+    "rows": 82,
+    "first_day": "2026-07-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GPROBUSDT",
+    "rows": 11,
+    "first_day": "2026-09-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GPSUSDT",
+    "rows": 572,
+    "first_day": "2025-03-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GRAMUSDT",
+    "rows": 87,
+    "first_day": "2026-07-02",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GRTUSDT",
+    "rows": 2110,
+    "first_day": "2020-12-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GSBUSDT",
+    "rows": 60,
+    "first_day": "2026-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GTCUSDT",
+    "rows": 1935,
+    "first_day": "2021-06-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GUNUSDT",
+    "rows": 545,
+    "first_day": "2025-03-31",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "GUSDT",
+    "rows": 800,
+    "first_day": "2024-07-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HAEDALUSDT",
+    "rows": 494,
+    "first_day": "2025-05-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HBARUSDT",
+    "rows": 2555,
+    "first_day": "2019-09-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HEIUSDT",
+    "rows": 591,
+    "first_day": "2025-02-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HEMIUSDT",
+    "rows": 369,
+    "first_day": "2025-09-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HIMSBUSDT",
+    "rows": 18,
+    "first_day": "2026-09-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HIVEUSDT",
+    "rows": 2344,
+    "first_day": "2020-04-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HMSTRUSDT",
+    "rows": 731,
+    "first_day": "2024-09-26",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HOLOUSDT",
+    "rows": 381,
+    "first_day": "2025-09-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HOMEUSDT",
+    "rows": 472,
+    "first_day": "2025-06-12",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HOODBUSDT",
+    "rows": 74,
+    "first_day": "2026-07-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HOTUSDT",
+    "rows": 2778,
+    "first_day": "2019-02-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HUMAUSDT",
+    "rows": 489,
+    "first_day": "2025-05-26",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HYPERUSDT",
+    "rows": 523,
+    "first_day": "2025-04-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "HYPEUSDT",
+    "rows": 3,
+    "first_day": "2026-09-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "IBMBUSDT",
+    "rows": 74,
+    "first_day": "2026-07-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ICPUSDT",
+    "rows": 1965,
+    "first_day": "2021-05-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "IDUSDT",
+    "rows": 1285,
+    "first_day": "2023-03-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ILVUSDT",
+    "rows": 1831,
+    "first_day": "2021-09-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "IMXUSDT",
+    "rows": 1721,
+    "first_day": "2022-01-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "INITUSDT",
+    "rows": 521,
+    "first_day": "2025-04-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "INJUSDT",
+    "rows": 2167,
+    "first_day": "2020-10-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "INTCBUSDT",
+    "rows": 96,
+    "first_day": "2026-06-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "INTWBUSDT",
+    "rows": 67,
+    "first_day": "2026-07-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "IOSTUSDT",
+    "rows": 2746,
+    "first_day": "2019-03-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "IOTAUSDT",
+    "rows": 3041,
+    "first_day": "2018-05-31",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "IOTXUSDT",
+    "rows": 2509,
+    "first_day": "2019-11-14",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "IOUSDT",
+    "rows": 838,
+    "first_day": "2024-06-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "IQUSDT",
+    "rows": 1101,
+    "first_day": "2023-09-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "IRENBUSDT",
+    "rows": 53,
+    "first_day": "2026-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "JASMYUSDT",
+    "rows": 1770,
+    "first_day": "2021-11-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "JOEUSDT",
+    "rows": 1734,
+    "first_day": "2021-12-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "JSTUSDT",
+    "rows": 2238,
+    "first_day": "2020-08-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "JTOUSDT",
+    "rows": 1025,
+    "first_day": "2023-12-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "JUVUSDT",
+    "rows": 2106,
+    "first_day": "2020-12-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "KAIAUSDT",
+    "rows": 696,
+    "first_day": "2024-10-31",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "KAITOUSDT",
+    "rows": 584,
+    "first_day": "2025-02-20",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "KATUSDT",
+    "rows": 193,
+    "first_day": "2026-03-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "KAVAUSDT",
+    "rows": 2529,
+    "first_day": "2019-10-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "KERNELUSDT",
+    "rows": 531,
+    "first_day": "2025-04-14",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "KGSTUSDT",
+    "rows": 277,
+    "first_day": "2025-12-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "KITEUSDT",
+    "rows": 328,
+    "first_day": "2025-11-03",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "KMNOUSDT",
+    "rows": 509,
+    "first_day": "2025-05-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "KNCUSDT",
+    "rows": 2298,
+    "first_day": "2020-06-12",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "KORUBUSDT",
+    "rows": 67,
+    "first_day": "2026-07-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "KSMUSDT",
+    "rows": 2214,
+    "first_day": "2020-09-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LAUSDT",
+    "rows": 445,
+    "first_day": "2025-07-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LAYERUSDT",
+    "rows": 593,
+    "first_day": "2025-02-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LAZIOUSDT",
+    "rows": 1802,
+    "first_day": "2021-10-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LDOUSDT",
+    "rows": 1602,
+    "first_day": "2022-05-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LINEAUSDT",
+    "rows": 382,
+    "first_day": "2025-09-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "rows": 2811,
+    "first_day": "2019-01-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LISTAUSDT",
+    "rows": 829,
+    "first_day": "2024-06-20",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LITEBUSDT",
+    "rows": 89,
+    "first_day": "2026-06-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LPTUSDT",
+    "rows": 1948,
+    "first_day": "2021-05-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LQTYUSDT",
+    "rows": 1307,
+    "first_day": "2023-02-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LSKUSDT",
+    "rows": 2425,
+    "first_day": "2020-02-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LTCUSDT",
+    "rows": 3210,
+    "first_day": "2017-12-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LUMIAUSDT",
+    "rows": 709,
+    "first_day": "2024-10-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LUNAUSDT",
+    "rows": 2211,
+    "first_day": "2020-08-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "LUNCUSDT",
+    "rows": 1479,
+    "first_day": "2022-09-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MAGICUSDT",
+    "rows": 1385,
+    "first_day": "2022-12-12",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MANAUSDT",
+    "rows": 2243,
+    "first_day": "2020-08-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MANTAUSDT",
+    "rows": 983,
+    "first_day": "2024-01-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MANTRAUSDT",
+    "rows": 207,
+    "first_day": "2026-03-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MARSCOINUSDT",
+    "rows": 23,
+    "first_day": "2026-09-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MASKUSDT",
+    "rows": 1951,
+    "first_day": "2021-05-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MAVUSDT",
+    "rows": 1187,
+    "first_day": "2023-06-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MBLUSDT",
+    "rows": 2410,
+    "first_day": "2020-02-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MEGAUSDT",
+    "rows": 150,
+    "first_day": "2026-04-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MEMEUSDT",
+    "rows": 1059,
+    "first_day": "2023-11-03",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "METABUSDT",
+    "rows": 89,
+    "first_day": "2026-06-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "METISUSDT",
+    "rows": 930,
+    "first_day": "2024-03-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "METUSDT",
+    "rows": 318,
+    "first_day": "2025-11-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MEUSDT",
+    "rows": 656,
+    "first_day": "2024-12-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MINAUSDT",
+    "rows": 1874,
+    "first_day": "2021-08-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MIRAUSDT",
+    "rows": 366,
+    "first_day": "2025-09-26",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MITOUSDT",
+    "rows": 394,
+    "first_day": "2025-08-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MMTUSDT",
+    "rows": 327,
+    "first_day": "2025-11-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MORPHOUSDT",
+    "rows": 359,
+    "first_day": "2025-10-03",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MOVEUSDT",
+    "rows": 657,
+    "first_day": "2024-12-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MOVRUSDT",
+    "rows": 1784,
+    "first_day": "2021-11-08",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MRNABUSDT",
+    "rows": 25,
+    "first_day": "2026-09-02",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MRVLBUSDT",
+    "rows": 74,
+    "first_day": "2026-07-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MSFTBUSDT",
+    "rows": 89,
+    "first_day": "2026-06-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MSTRBUSDT",
+    "rows": 96,
+    "first_day": "2026-06-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MTLUSDT",
+    "rows": 2592,
+    "first_day": "2019-08-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MUBARAKUSDT",
+    "rows": 549,
+    "first_day": "2025-03-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MUBUSDT",
+    "rows": 108,
+    "first_day": "2026-06-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MUUBUSDT",
+    "rows": 67,
+    "first_day": "2026-07-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "MVLLBUSDT",
+    "rows": 67,
+    "first_day": "2026-07-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NBISBUSDT",
+    "rows": 82,
+    "first_day": "2026-07-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "rows": 2174,
+    "first_day": "2020-10-14",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NEIROUSDT",
+    "rows": 741,
+    "first_day": "2024-09-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NEOUSDT",
+    "rows": 3233,
+    "first_day": "2017-11-20",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NEWTUSDT",
+    "rows": 460,
+    "first_day": "2025-06-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NEXOUSDT",
+    "rows": 1612,
+    "first_day": "2022-04-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NFLXBUSDT",
+    "rows": 53,
+    "first_day": "2026-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NIGHTUSDT",
+    "rows": 200,
+    "first_day": "2026-03-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NILUSDT",
+    "rows": 552,
+    "first_day": "2025-03-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NMRUSDT",
+    "rows": 2230,
+    "first_day": "2020-08-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NOKBUSDT",
+    "rows": 74,
+    "first_day": "2026-07-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NOMUSDT",
+    "rows": 361,
+    "first_day": "2025-10-01",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NOTUSDT",
+    "rows": 864,
+    "first_day": "2024-05-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NVDABUSDT",
+    "rows": 108,
+    "first_day": "2026-06-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "NXPCUSDT",
+    "rows": 500,
+    "first_day": "2025-05-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "OGNUSDT",
+    "rows": 2453,
+    "first_day": "2020-01-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "OGUSDT",
+    "rows": 2097,
+    "first_day": "2020-12-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ONDOUSDT",
+    "rows": 534,
+    "first_day": "2025-04-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ONEUSDT",
+    "rows": 2675,
+    "first_day": "2019-06-01",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ONGUSDT",
+    "rows": 2780,
+    "first_day": "2019-02-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ONTUSDT",
+    "rows": 3033,
+    "first_day": "2018-06-08",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "OPENUSDT",
+    "rows": 384,
+    "first_day": "2025-09-08",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "OPGUSDT",
+    "rows": 128,
+    "first_day": "2026-05-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "OPNUSDT",
+    "rows": 206,
+    "first_day": "2026-03-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "OPUSDT",
+    "rows": 1579,
+    "first_day": "2022-06-01",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ORCAUSDT",
+    "rows": 660,
+    "first_day": "2024-12-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ORCLBUSDT",
+    "rows": 67,
+    "first_day": "2026-07-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ORDIUSDT",
+    "rows": 1055,
+    "first_day": "2023-11-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "OSMOUSDT",
+    "rows": 1430,
+    "first_day": "2022-10-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PARTIUSDT",
+    "rows": 551,
+    "first_day": "2025-03-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PAXGUSDT",
+    "rows": 2221,
+    "first_day": "2020-08-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PENDLEUSDT",
+    "rows": 1182,
+    "first_day": "2023-07-03",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PENGUUSDT",
+    "rows": 649,
+    "first_day": "2024-12-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PEOPLEUSDT",
+    "rows": 1739,
+    "first_day": "2021-12-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "rows": 1241,
+    "first_day": "2023-05-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PHAUSDT",
+    "rows": 1920,
+    "first_day": "2021-06-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PIXELUSDT",
+    "rows": 951,
+    "first_day": "2024-02-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PLTRBUSDT",
+    "rows": 89,
+    "first_day": "2026-06-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PLUMEUSDT",
+    "rows": 405,
+    "first_day": "2025-08-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PNUTUSDT",
+    "rows": 685,
+    "first_day": "2024-11-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "POLUSDT",
+    "rows": 744,
+    "first_day": "2024-09-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "POLYXUSDT",
+    "rows": 1441,
+    "first_day": "2022-10-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PORTALUSDT",
+    "rows": 941,
+    "first_day": "2024-02-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PORTOUSDT",
+    "rows": 1776,
+    "first_day": "2021-11-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "POWRUSDT",
+    "rows": 1775,
+    "first_day": "2021-11-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PROMUSDT",
+    "rows": 1290,
+    "first_day": "2023-03-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PROVEUSDT",
+    "rows": 418,
+    "first_day": "2025-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PSGUSDT",
+    "rows": 2106,
+    "first_day": "2020-12-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PUMPUSDT",
+    "rows": 381,
+    "first_day": "2025-09-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PUNDIXUSDT",
+    "rows": 1997,
+    "first_day": "2021-04-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PYPLBUSDT",
+    "rows": 60,
+    "first_day": "2026-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "PYTHUSDT",
+    "rows": 968,
+    "first_day": "2024-02-02",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "QCOMBUSDT",
+    "rows": 82,
+    "first_day": "2026-07-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "QIUSDT",
+    "rows": 1777,
+    "first_day": "2021-11-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "QKCUSDT",
+    "rows": 1290,
+    "first_day": "2023-03-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "QNTBUSDT",
+    "rows": 67,
+    "first_day": "2026-07-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "QNTUSDT",
+    "rows": 1886,
+    "first_day": "2021-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "QQQBUSDT",
+    "rows": 89,
+    "first_day": "2026-06-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "QTUMUSDT",
+    "rows": 3114,
+    "first_day": "2018-03-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "QUICKUSDT",
+    "rows": 1868,
+    "first_day": "2021-08-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RADUSDT",
+    "rows": 1816,
+    "first_day": "2021-10-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RAREUSDT",
+    "rows": 1812,
+    "first_day": "2021-10-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RAYUSDT",
+    "rows": 1874,
+    "first_day": "2021-08-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RDDTBUSDT",
+    "rows": 11,
+    "first_day": "2026-09-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "REDUSDT",
+    "rows": 576,
+    "first_day": "2025-02-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RENDERUSDT",
+    "rows": 793,
+    "first_day": "2024-07-26",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "REQUSDT",
+    "rows": 1864,
+    "first_day": "2021-08-20",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RESOLVUSDT",
+    "rows": 473,
+    "first_day": "2025-06-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "REUSDT",
+    "rows": 101,
+    "first_day": "2026-06-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "REZUSDT",
+    "rows": 880,
+    "first_day": "2024-04-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RIFUSDT",
+    "rows": 2089,
+    "first_day": "2021-01-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RKLBBUSDT",
+    "rows": 74,
+    "first_day": "2026-07-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RLCUSDT",
+    "rows": 2509,
+    "first_day": "2019-11-14",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RLUSDUSDT",
+    "rows": 248,
+    "first_day": "2026-01-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ROBOUSDT",
+    "rows": 207,
+    "first_day": "2026-03-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RONINUSDT",
+    "rows": 965,
+    "first_day": "2024-02-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ROSEUSDT",
+    "rows": 2138,
+    "first_day": "2020-11-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RPLUSDT",
+    "rows": 1348,
+    "first_day": "2023-01-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RSRUSDT",
+    "rows": 2222,
+    "first_day": "2020-08-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RUNEUSDT",
+    "rows": 2214,
+    "first_day": "2020-09-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "RVNUSDT",
+    "rows": 2559,
+    "first_day": "2019-09-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SAGAUSDT",
+    "rows": 901,
+    "first_day": "2024-04-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SAHARAUSDT",
+    "rows": 458,
+    "first_day": "2025-06-26",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SANDUSDT",
+    "rows": 2235,
+    "first_day": "2020-08-14",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SANTOSUSDT",
+    "rows": 1761,
+    "first_day": "2021-12-01",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SAPIENUSDT",
+    "rows": 325,
+    "first_day": "2025-11-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SCRUSDT",
+    "rows": 716,
+    "first_day": "2024-10-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SCUSDT",
+    "rows": 2274,
+    "first_day": "2020-07-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SEIUSDT",
+    "rows": 1139,
+    "first_day": "2023-08-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SENTUSDT",
+    "rows": 248,
+    "first_day": "2026-01-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SFPUSDT",
+    "rows": 2057,
+    "first_day": "2021-02-08",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SHELLUSDT",
+    "rows": 577,
+    "first_day": "2025-02-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SHIBUSDT",
+    "rows": 1966,
+    "first_day": "2021-05-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SIGNUSDT",
+    "rows": 517,
+    "first_day": "2025-04-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SKHYBUSDT",
+    "rows": 76,
+    "first_day": "2026-07-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SKLUSDT",
+    "rows": 2126,
+    "first_day": "2020-12-01",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SKYUSDT",
+    "rows": 375,
+    "first_day": "2025-09-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SLPUSDT",
+    "rows": 1976,
+    "first_day": "2021-04-30",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SMCIBUSDT",
+    "rows": 53,
+    "first_day": "2026-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SMHBUSDT",
+    "rows": 60,
+    "first_day": "2026-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SNDKBUSDT",
+    "rows": 108,
+    "first_day": "2026-06-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SNXUSDT",
+    "rows": 2271,
+    "first_day": "2020-07-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SNXXBUSDT",
+    "rows": 67,
+    "first_day": "2026-07-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "rows": 2238,
+    "first_day": "2020-08-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SOLVUSDT",
+    "rows": 618,
+    "first_day": "2025-01-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SOMIUSDT",
+    "rows": 390,
+    "first_day": "2025-09-02",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SOPHUSDT",
+    "rows": 487,
+    "first_day": "2025-05-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SOXLBUSDT",
+    "rows": 82,
+    "first_day": "2026-07-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SOXSBUSDT",
+    "rows": 60,
+    "first_day": "2026-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SPCXBUSDT",
+    "rows": 107,
+    "first_day": "2026-06-12",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SPELLUSDT",
+    "rows": 1738,
+    "first_day": "2021-12-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SPKUSDT",
+    "rows": 467,
+    "first_day": "2025-06-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SPYBUSDT",
+    "rows": 82,
+    "first_day": "2026-07-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SQQQBUSDT",
+    "rows": 25,
+    "first_day": "2026-09-02",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SSVUSDT",
+    "rows": 1311,
+    "first_day": "2023-02-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "STEEMUSDT",
+    "rows": 1619,
+    "first_day": "2022-04-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "STGUSDT",
+    "rows": 1500,
+    "first_day": "2022-08-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "STOUSDT",
+    "rows": 513,
+    "first_day": "2025-05-02",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "STRAXUSDT",
+    "rows": 2132,
+    "first_day": "2020-11-18",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "STRKUSDT",
+    "rows": 950,
+    "first_day": "2024-02-20",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "STXBUSDT",
+    "rows": 25,
+    "first_day": "2026-09-02",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "STXUSDT",
+    "rows": 2529,
+    "first_day": "2019-10-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "rows": 1243,
+    "first_day": "2023-05-03",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SUNUSDT",
+    "rows": 2194,
+    "first_day": "2020-09-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SUPERUSDT",
+    "rows": 2012,
+    "first_day": "2021-03-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SUSDT",
+    "rows": 619,
+    "first_day": "2025-01-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SUSHIUSDT",
+    "rows": 2217,
+    "first_day": "2020-09-01",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SXTUSDT",
+    "rows": 507,
+    "first_day": "2025-05-08",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "SYNUSDT",
+    "rows": 1313,
+    "first_day": "2023-02-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TAOUSDT",
+    "rows": 899,
+    "first_day": "2024-04-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TFUELUSDT",
+    "rows": 2683,
+    "first_day": "2019-05-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "THETAUSDT",
+    "rows": 2727,
+    "first_day": "2019-04-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "THEUSDT",
+    "rows": 669,
+    "first_day": "2024-11-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TIAUSDT",
+    "rows": 1062,
+    "first_day": "2023-10-31",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TKOUSDT",
+    "rows": 1999,
+    "first_day": "2021-04-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TLMUSDT",
+    "rows": 1993,
+    "first_day": "2021-04-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TNSRUSDT",
+    "rows": 902,
+    "first_day": "2024-04-08",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TOWNSUSDT",
+    "rows": 418,
+    "first_day": "2025-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TQQQBUSDT",
+    "rows": 67,
+    "first_day": "2026-07-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TRBUSDT",
+    "rows": 2220,
+    "first_day": "2020-08-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TREEUSDT",
+    "rows": 425,
+    "first_day": "2025-07-29",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TRUMPUSDT",
+    "rows": 616,
+    "first_day": "2025-01-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TRXUSDT",
+    "rows": 3030,
+    "first_day": "2018-06-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TSLABUSDT",
+    "rows": 108,
+    "first_day": "2026-06-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TSMBUSDT",
+    "rows": 74,
+    "first_day": "2026-07-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TSTUSDT",
+    "rows": 595,
+    "first_day": "2025-02-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TURBOUSDT",
+    "rows": 741,
+    "first_day": "2024-09-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TURTLEUSDT",
+    "rows": 340,
+    "first_day": "2025-10-22",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TUSDT",
+    "rows": 1675,
+    "first_day": "2022-02-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TUTUSDT",
+    "rows": 549,
+    "first_day": "2025-03-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "TWTUSDT",
+    "rows": 2069,
+    "first_day": "2021-01-27",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "UMAUSDT",
+    "rows": 2209,
+    "first_day": "2020-09-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "UNIUSDT",
+    "rows": 2201,
+    "first_day": "2020-09-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "USARBUSDT",
+    "rows": 53,
+    "first_day": "2026-08-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "USDSUSDT",
+    "rows": 171,
+    "first_day": "2026-04-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "USTCUSDT",
+    "rows": 1297,
+    "first_day": "2023-03-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "USUALUSDT",
+    "rows": 677,
+    "first_day": "2024-11-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "UUSDT",
+    "rows": 257,
+    "first_day": "2026-01-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "VANAUSDT",
+    "rows": 650,
+    "first_day": "2024-12-16",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "VELODROMEUSDT",
+    "rows": 653,
+    "first_day": "2024-12-13",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "VETUSDT",
+    "rows": 2986,
+    "first_day": "2018-07-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "VIRTUALUSDT",
+    "rows": 534,
+    "first_day": "2025-04-11",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "VTHOUSDT",
+    "rows": 2263,
+    "first_day": "2020-07-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WALUSDT",
+    "rows": 352,
+    "first_day": "2025-10-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WAXPUSDT",
+    "rows": 1861,
+    "first_day": "2021-08-23",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WBETHUSDT",
+    "rows": 1166,
+    "first_day": "2023-07-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WBTCUSDT",
+    "rows": 1248,
+    "first_day": "2023-04-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WCTUSDT",
+    "rows": 530,
+    "first_day": "2025-04-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WDCBUSDT",
+    "rows": 82,
+    "first_day": "2026-07-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WIFUSDT",
+    "rows": 936,
+    "first_day": "2024-03-05",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WINUSDT",
+    "rows": 2614,
+    "first_day": "2019-08-01",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WLDUSDT",
+    "rows": 1161,
+    "first_day": "2023-07-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WLFIUSDT",
+    "rows": 391,
+    "first_day": "2025-09-01",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WOOUSDT",
+    "rows": 1692,
+    "first_day": "2022-02-08",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "WUSDT",
+    "rows": 907,
+    "first_day": "2024-04-03",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "XAIUSDT",
+    "rows": 992,
+    "first_day": "2024-01-09",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "XAUTUSDT",
+    "rows": 185,
+    "first_day": "2026-03-26",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "XECUSDT",
+    "rows": 1850,
+    "first_day": "2021-09-03",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "XLMUSDT",
+    "rows": 3041,
+    "first_day": "2018-05-31",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "XNOUSDT",
+    "rows": 1703,
+    "first_day": "2022-01-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "XPLUSDT",
+    "rows": 367,
+    "first_day": "2025-09-25",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "rows": 3068,
+    "first_day": "2018-05-04",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "XTZUSDT",
+    "rows": 2560,
+    "first_day": "2019-09-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "XUSDUSDT",
+    "rows": 557,
+    "first_day": "2025-03-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "XVGUSDT",
+    "rows": 1939,
+    "first_day": "2021-06-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "XVSUSDT",
+    "rows": 2182,
+    "first_day": "2020-10-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "YBUSDT",
+    "rows": 347,
+    "first_day": "2025-10-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "YFIUSDT",
+    "rows": 2239,
+    "first_day": "2020-08-10",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "YGGUSDT",
+    "rows": 1829,
+    "first_day": "2021-09-24",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ZAMAUSDT",
+    "rows": 237,
+    "first_day": "2026-02-02",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ZBTUSDT",
+    "rows": 345,
+    "first_day": "2025-10-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ZECUSDT",
+    "rows": 2747,
+    "first_day": "2019-03-21",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ZENUSDT",
+    "rows": 2274,
+    "first_day": "2020-07-06",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ZILUSDT",
+    "rows": 2777,
+    "first_day": "2019-02-19",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ZKCUSDT",
+    "rows": 377,
+    "first_day": "2025-09-15",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ZKPUSDT",
+    "rows": 263,
+    "first_day": "2026-01-07",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ZKUSDT",
+    "rows": 832,
+    "first_day": "2024-06-17",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ZROUSDT",
+    "rows": 829,
+    "first_day": "2024-06-20",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "ZRXUSDT",
+    "rows": 2768,
+    "first_day": "2019-02-28",
+    "last_day": "2026-09-26"
+  },
+  {
+    "symbol": "币安人生USDT",
+    "rows": 0,
+    "error": "'ascii' codec can't encode characters in position 26-29: ordinal not in range(128)"
+  },
+  {
+    "symbol": "牛来USDT",
+    "rows": 0,
+    "error": "'ascii' codec can't encode characters in position 26-27: ordinal not in range(128)"
+  }
+]
