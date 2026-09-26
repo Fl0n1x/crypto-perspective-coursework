@@ -1,0 +1,26 @@
+{
+  "best_params_v2": {
+    "model__l2_regularization": 0.13311216080736885,
+    "model__learning_rate": 0.010725209743171996,
+    "model__max_depth": 4,
+    "model__max_iter": 443,
+    "model__max_leaf_nodes": 58,
+    "model__min_samples_leaf": 39
+  },
+  "best_params_v3": {
+    "model__l2_regularization": 0.13311216080736885,
+    "model__learning_rate": 0.010725209743171996,
+    "model__max_depth": 4,
+    "model__max_iter": 443,
+    "model__max_leaf_nodes": 58,
+    "model__min_samples_leaf": 39
+  },
+  "best_params_rank": {
+    "model__l2_regularization": 0.0019329933033819652,
+    "model__learning_rate": 0.03529746546288799,
+    "model__max_depth": null,
+    "model__max_iter": 198,
+    "model__max_leaf_nodes": 58,
+    "model__min_samples_leaf": 49
+  }
+}
