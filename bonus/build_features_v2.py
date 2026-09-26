@@ -124,6 +124,16 @@ def trailing_features_v2(df, t0):
     return base
 
 
+def trailing_btc_corr(df, btc, t0, window=90):
+    start = t0 - pd.Timedelta(days=window)
+    coin_ret = df.loc[start:t0, "close"].pct_change().dropna()
+    btc_ret = btc.loc[start:t0, "close"].pct_change().dropna()
+    joined = pd.concat([coin_ret, btc_ret], axis=1, join="inner")
+    if len(joined) < 20:
+        return np.nan
+    return joined.iloc[:, 0].corr(joined.iloc[:, 1])
+
+
 def forward_return(df, t0):
     target = t0 + pd.Timedelta(days=HORIZON_DAYS)
     window = df.loc[t0:target]
@@ -199,6 +209,7 @@ def main():
                 **feat,
                 "relative_strength_vs_btc_90d": feat["trailing_return_90d"] - btc_feat["trailing_return_90d"],
                 "btc_rsi_14": btc_feat["rsi_14"],
+                "btc_corr_90d": trailing_btc_corr(df, btc, t0),
                 "forward_return_60d": fwd,
                 "btc_forward_return_60d": btc_fwd,
                 "excess_return_60d": fwd - btc_fwd,
@@ -210,9 +221,10 @@ def main():
 
     print("Розмір розширеної панелі:", panel.shape)
     print("Нові стовпці порівняно з основною панеллю: rsi_14, macd_hist_12_26_9,",
-          "bollinger_pctb_20, momentum_acceleration, btc_rsi_14")
+          "bollinger_pctb_20, momentum_acceleration, btc_rsi_14, btc_corr_90d")
     print("Пропуски по нових ознаках:")
-    new_cols = ["rsi_14", "macd_hist_12_26_9", "bollinger_pctb_20", "momentum_acceleration", "btc_rsi_14"]
+    new_cols = ["rsi_14", "macd_hist_12_26_9", "bollinger_pctb_20", "momentum_acceleration",
+                "btc_rsi_14", "btc_corr_90d"]
     print(panel[new_cols].isna().sum().to_string())
 
     out_path = Path(__file__).parent / "panel_v2.csv"
