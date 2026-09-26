@@ -418,6 +418,16 @@ def main():
     print()
     print("Збережено:", ROOT / "walk_forward_report.csv")
 
+    import json
+    params_out = {
+        "best_params_v2": best_params_v2,
+        "best_params_v3": best_params_v3,
+        "best_params_rank": best_params_rank,
+    }
+    with open(ROOT / "best_params.json", "w", encoding="utf-8") as f:
+        json.dump(params_out, f, indent=2)
+    print("Збережено:", ROOT / "best_params.json")
+
     try:
         import matplotlib.pyplot as plt
         fig, ax = plt.subplots(figsize=(9, 4.5))
