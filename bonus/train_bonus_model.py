@@ -29,12 +29,12 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from scipy.stats import loguniform, randint
+from scipy.stats import loguniform, randint, spearmanr
 from sklearn.compose import ColumnTransformer
-from sklearn.ensemble import HistGradientBoostingClassifier
+from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor
 from sklearn.impute import SimpleImputer
-from sklearn.metrics import roc_auc_score, balanced_accuracy_score, accuracy_score
-from sklearn.model_selection import RandomizedSearchCV, StratifiedGroupKFold
+from sklearn.metrics import roc_auc_score, balanced_accuracy_score, accuracy_score, make_scorer
+from sklearn.model_selection import RandomizedSearchCV, StratifiedGroupKFold, GroupKFold
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
 
@@ -56,7 +56,7 @@ NUM_FEATURES_BASE = [
 ]
 NUM_FEATURES_NEW = [
     "rsi_14", "macd_hist_12_26_9", "bollinger_pctb_20", "momentum_acceleration",
-    "btc_rsi_14",
+    "btc_rsi_14", "btc_corr_90d",
 ]
 CAT_FEATURES = ["sector", "market_regime"]
 
@@ -67,7 +67,7 @@ CAT_FEATURES = ["sector", "market_regime"]
 XS_NORMALIZE_COLS = [
     "trailing_return_30d", "trailing_return_90d", "trailing_volatility_30d",
     "trailing_volume_trend", "drawdown_from_high_180d", "rsi_14",
-    "macd_hist_12_26_9", "bollinger_pctb_20", "momentum_acceleration",
+    "macd_hist_12_26_9", "bollinger_pctb_20", "momentum_acceleration", "btc_corr_90d",
 ]
 NUM_FEATURES_XS = [f"{c}_xs" for c in XS_NORMALIZE_COLS] + [
     "relative_strength_vs_btc_90d", "coin_age_days", "avg_quote_volume_30d_log",
@@ -89,6 +89,11 @@ def load_panel():
 
     for col in XS_NORMALIZE_COLS:
         df[f"{col}_xs"] = df.groupby("checkpoint")[col].transform(xs_zscore)
+
+    # неперервна ціль для варіанту "навчання на ранжування": процентиль
+    # excess_return_60d монети серед усіх монет того самого checkpoint,
+    # замість грубого бінарного порогу "вище/нижче ринку"
+    df["rank_target_pct"] = df.groupby("checkpoint")["excess_return_60d"].rank(pct=True)
     return df
 
 
@@ -136,6 +141,80 @@ def tune_hyperparameters(df, numeric_features, categorical_features, tuning_chec
     for k, v in search.best_params_.items():
         print(f"  {k}: {v}")
     return search.best_params_
+
+
+def _spearman_score(y_true, y_pred):
+    corr, _ = spearmanr(y_true, y_pred)
+    return corr if not np.isnan(corr) else 0.0
+
+
+SPEARMAN_SCORER = make_scorer(_spearman_score)
+
+
+def tune_rank_regressor(df, numeric_features, categorical_features, tuning_checkpoints):
+    tune_df = df[df["checkpoint"].isin(tuning_checkpoints)]
+    X = tune_df[numeric_features + categorical_features]
+    y = tune_df["rank_target_pct"]
+    groups = tune_df["symbol"]
+
+    base_model = HistGradientBoostingRegressor(random_state=SEED)
+    pipe = make_pipeline(numeric_features, categorical_features, base_model)
+
+    param_dist = {
+        "model__learning_rate": loguniform(0.01, 0.3),
+        "model__max_iter": randint(100, 500),
+        "model__max_depth": [3, 4, 5, 6, None],
+        "model__max_leaf_nodes": randint(15, 63),
+        "model__l2_regularization": loguniform(1e-3, 1.0),
+        "model__min_samples_leaf": randint(10, 60),
+    }
+    cv = GroupKFold(n_splits=5)
+    search = RandomizedSearchCV(
+        pipe, param_distributions=param_dist, n_iter=40, scoring=SPEARMAN_SCORER,
+        cv=cv, random_state=SEED, n_jobs=-1,
+    )
+    search.fit(X, y, groups=groups)
+    print(f"Підбір гіперпараметрів (rank-регресія) на {len(tuning_checkpoints)} checkpoint, "
+          f"{len(tune_df)} рядків")
+    print("Найкраща Spearman-кореляція на тюнінговій крос-валідації:", round(search.best_score_, 4))
+    print("Найкращі гіперпараметри:")
+    for k, v in search.best_params_.items():
+        print(f"  {k}: {v}")
+    return search.best_params_
+
+
+def evaluate_rank_fold(df, train_cps, test_cps, numeric_features, categorical_features, model_params,
+                        return_score=False):
+    train_fold = df[df["checkpoint"].isin(train_cps)]
+    test_fold = df[df["checkpoint"].isin(test_cps)]
+
+    X_train = train_fold[numeric_features + categorical_features]
+    y_train = train_fold["rank_target_pct"]
+    X_test = test_fold[numeric_features + categorical_features]
+    y_test_binary = test_fold["outperform_market"]
+
+    model = HistGradientBoostingRegressor(random_state=SEED, **{
+        k.replace("model__", ""): v for k, v in model_params.items()
+    })
+    pipe = make_pipeline(numeric_features, categorical_features, model)
+    pipe.fit(X_train, y_train)
+    score = pipe.predict(X_test)
+    pred = (score >= np.median(score)).astype(int)
+
+    regime_counts = test_fold["market_regime"].value_counts(normalize=True)
+    dominant_regime = regime_counts.idxmax()
+
+    result = {
+        "test_start": test_cps[0].date(),
+        "test_end": test_cps[-1].date(),
+        "dominant_regime": dominant_regime,
+        "n_test": len(test_fold),
+        "roc_auc": roc_auc_score(y_test_binary, score) if y_test_binary.nunique() > 1 else np.nan,
+        "balanced_accuracy": balanced_accuracy_score(y_test_binary, pred),
+    }
+    if return_score:
+        return result, score, y_test_binary.reset_index(drop=True)
+    return result
 
 
 def walk_forward_folds(checkpoints, test_block, embargo, min_tuning_checkpoints,
@@ -215,6 +294,35 @@ def evaluate_ensemble_fold(df, train_cps, test_cps, params_v2, params_v3):
     }
 
 
+def evaluate_ensemble3_fold(df, train_cps, test_cps, params_v2, params_v3, params_rank):
+    """Тришаровий блендинг v2 + v3 + rank-регресія. Кожна складова дає
+    оцінки на різній шкалі (ймовірність класу проти неперервного
+    прогнозованого рангу), тому перед усередненням кожен вектор
+    переводиться в процентильний ранг усередині тестового фолду - так
+    вони стають порівнянними незалежно від того, звідки прийшли."""
+    numeric_v2 = NUM_FEATURES_BASE + NUM_FEATURES_NEW
+    r2, proba2, y_test = evaluate_fold(df, train_cps, test_cps, numeric_v2, CAT_FEATURES,
+                                        params_v2, return_proba=True)
+    _, proba3, _ = evaluate_fold(df, train_cps, test_cps, NUM_FEATURES_XS, CAT_FEATURES,
+                                  params_v3, return_proba=True)
+    _, score_rank, _ = evaluate_rank_fold(df, train_cps, test_cps, numeric_v2, CAT_FEATURES,
+                                          params_rank, return_score=True)
+
+    rank2 = pd.Series(proba2).rank(pct=True).values
+    rank3 = pd.Series(proba3).rank(pct=True).values
+    rank4 = pd.Series(score_rank).rank(pct=True).values
+    blended = (rank2 + rank3 + rank4) / 3
+    pred_ens = (blended >= 0.5).astype(int)
+    return {
+        "test_start": r2["test_start"],
+        "test_end": r2["test_end"],
+        "dominant_regime": r2["dominant_regime"],
+        "n_test": r2["n_test"],
+        "roc_auc": roc_auc_score(y_test, blended) if y_test.nunique() > 1 else np.nan,
+        "balanced_accuracy": balanced_accuracy_score(y_test, pred_ens),
+    }
+
+
 def main():
     df = load_panel()
     checkpoints = sorted(df["checkpoint"].unique())
@@ -228,54 +336,81 @@ def main():
     print("--- Тюнінг: кроссекційно нормалізовані ознаки (v3) ---")
     best_params_v3 = tune_hyperparameters(df, NUM_FEATURES_XS, categorical_features, tuning_checkpoints)
     print()
+    print("--- Тюнінг: rank-регресія (v4) ---")
+    best_params_rank = tune_rank_regressor(df, numeric_features, categorical_features, tuning_checkpoints)
+    print()
 
     folds = walk_forward_folds(checkpoints, TEST_BLOCK, EMBARGO,
                                 MIN_TUNING_CHECKPOINTS, MIN_FOLD_TRAIN_CHECKPOINTS)
     print(f"Walk-forward фолдів: {len(folds)}")
     print()
 
-    baseline_rows, v2_rows, v3_rows, ens_rows = [], [], [], []
+    (true_baseline_rows, features_only_rows, v2_rows, v3_rows, v4_rows,
+     ens_rows, ens3_rows) = [], [], [], [], [], [], []
     for train_cps, test_cps in folds:
-        baseline_rows.append(evaluate_fold(df, train_cps, test_cps, numeric_features,
-                                            categorical_features, model_params=None))
+        # справжній базовий: точно той самий набір ознак, що й у розділі 5
+        # курсової (FINAL_FEATURES), без rsi/macd/bollinger/corr, з тими ж
+        # гіперпараметрами (max_iter=150, learning_rate=0.08, max_depth=4)
+        true_baseline_rows.append(evaluate_fold(df, train_cps, test_cps, NUM_FEATURES_BASE,
+                                                  categorical_features, model_params=None))
+        # той самий untuned конвеєр, але з новими ознаками - ізолює ефект
+        # самих ознак від ефекту тюнінгу гіперпараметрів
+        features_only_rows.append(evaluate_fold(df, train_cps, test_cps, numeric_features,
+                                                  categorical_features, model_params=None))
         v2_rows.append(evaluate_fold(df, train_cps, test_cps, numeric_features,
                                       categorical_features, model_params=best_params_v2))
         v3_rows.append(evaluate_fold(df, train_cps, test_cps, NUM_FEATURES_XS,
                                       categorical_features, model_params=best_params_v3))
+        v4_rows.append(evaluate_rank_fold(df, train_cps, test_cps, numeric_features,
+                                           categorical_features, model_params=best_params_rank))
         ens_rows.append(evaluate_ensemble_fold(df, train_cps, test_cps, best_params_v2, best_params_v3))
+        ens3_rows.append(evaluate_ensemble3_fold(df, train_cps, test_cps, best_params_v2,
+                                                  best_params_v3, best_params_rank))
 
-    baseline_df = pd.DataFrame(baseline_rows)
+    true_baseline_df = pd.DataFrame(true_baseline_rows)
+    features_only_df = pd.DataFrame(features_only_rows)
     v2_df = pd.DataFrame(v2_rows)
     v3_df = pd.DataFrame(v3_rows)
+    v4_df = pd.DataFrame(v4_rows)
     ens_df = pd.DataFrame(ens_rows)
+    ens3_df = pd.DataFrame(ens3_rows)
 
     report = pd.DataFrame({
-        "test_start": baseline_df["test_start"],
-        "test_end": baseline_df["test_end"],
-        "dominant_regime": baseline_df["dominant_regime"],
-        "n_test": baseline_df["n_test"],
-        "roc_auc_baseline": baseline_df["roc_auc"].round(4),
+        "test_start": true_baseline_df["test_start"],
+        "test_end": true_baseline_df["test_end"],
+        "dominant_regime": true_baseline_df["dominant_regime"],
+        "n_test": true_baseline_df["n_test"],
+        "roc_auc_true_baseline": true_baseline_df["roc_auc"].round(4),
+        "roc_auc_features_only": features_only_df["roc_auc"].round(4),
         "roc_auc_tuned_v2": v2_df["roc_auc"].round(4),
         "roc_auc_xs_v3": v3_df["roc_auc"].round(4),
+        "roc_auc_rank_v4": v4_df["roc_auc"].round(4),
         "roc_auc_ensemble": ens_df["roc_auc"].round(4),
-        "balanced_acc_baseline": baseline_df["balanced_accuracy"].round(4),
+        "roc_auc_ensemble3": ens3_df["roc_auc"].round(4),
+        "balanced_acc_true_baseline": true_baseline_df["balanced_accuracy"].round(4),
         "balanced_acc_tuned_v2": v2_df["balanced_accuracy"].round(4),
         "balanced_acc_xs_v3": v3_df["balanced_accuracy"].round(4),
-        "balanced_acc_ensemble": ens_df["balanced_accuracy"].round(4),
+        "balanced_acc_rank_v4": v4_df["balanced_accuracy"].round(4),
+        "balanced_acc_ensemble3": ens3_df["balanced_accuracy"].round(4),
     })
     print(report.to_string(index=False))
     print()
-    print("Середній ROC-AUC по фолдах (базовий конвеєр курсової):     ",
-          round(baseline_df["roc_auc"].mean(), 4), "std:", round(baseline_df["roc_auc"].std(), 4))
-    print("Середній ROC-AUC по фолдах (тюнінг + нові ознаки, v2):     ",
-          round(v2_df["roc_auc"].mean(), 4), "std:", round(v2_df["roc_auc"].std(), 4))
-    print("Середній ROC-AUC по фолдах (кроссекційна нормалізація, v3):",
-          round(v3_df["roc_auc"].mean(), 4), "std:", round(v3_df["roc_auc"].std(), 4))
-    print("Середній ROC-AUC по фолдах (блендинг v2+v3, ensemble):     ",
-          round(ens_df["roc_auc"].mean(), 4), "std:", round(ens_df["roc_auc"].std(), 4))
+    variants = [
+        ("справжній базовий, як у курсовій", true_baseline_df),
+        ("ті самі гіперпараметри + нові ознаки", features_only_df),
+        ("тюнінг + нові ознаки, v2", v2_df),
+        ("кроссекційна нормалізація, v3", v3_df),
+        ("rank-регресія, v4", v4_df),
+        ("блендинг v2+v3, ensemble", ens_df),
+        ("блендинг v2+v3+v4, ensemble3", ens3_df),
+    ]
+    for label, vdf in variants:
+        print(f"Середній ROC-AUC по фолдах ({label}):".ljust(70),
+              round(vdf["roc_auc"].mean(), 4), "std:", round(vdf["roc_auc"].std(), 4))
     print()
     by_regime = report.groupby("dominant_regime")[
-        ["roc_auc_baseline", "roc_auc_tuned_v2", "roc_auc_xs_v3", "roc_auc_ensemble"]].mean().round(4)
+        ["roc_auc_true_baseline", "roc_auc_features_only", "roc_auc_tuned_v2",
+         "roc_auc_xs_v3", "roc_auc_rank_v4", "roc_auc_ensemble", "roc_auc_ensemble3"]].mean().round(4)
     print("Середній ROC-AUC за домінантним режимом тестового блоку:")
     print(by_regime.to_string())
 
@@ -287,10 +422,11 @@ def main():
         import matplotlib.pyplot as plt
         fig, ax = plt.subplots(figsize=(9, 4.5))
         x = np.arange(len(report))
-        ax.plot(x, report["roc_auc_baseline"], marker="o", label="Базовий (курсова)", color="#9CA3AF")
+        ax.plot(x, report["roc_auc_true_baseline"], marker="o", label="Базовий (курсова)", color="#9CA3AF")
         ax.plot(x, report["roc_auc_tuned_v2"], marker="o", label="Тюнінг + нові ознаки (v2)", color="#60A5FA")
         ax.plot(x, report["roc_auc_xs_v3"], marker="o", label="Кроссекційна нормалізація (v3)", color="#2563EB")
-        ax.plot(x, report["roc_auc_ensemble"], marker="s", label="Блендинг v2+v3", color="#16A34A", linewidth=2)
+        ax.plot(x, report["roc_auc_ensemble"], marker="s", label="Блендинг v2+v3 (найкращий за середнім)",
+                color="#16A34A", linewidth=2)
         ax.axhline(0.5, color="black", linestyle="--", linewidth=1, label="Випадковий рівень")
         ax.set_xticks(x)
         ax.set_xticklabels([f"{r.test_start}\n({r.dominant_regime})" for r in report.itertuples()],
