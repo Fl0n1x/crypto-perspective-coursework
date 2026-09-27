@@ -3,4 +3,3 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-bonus/weekly_panel_h*.csv.gz
