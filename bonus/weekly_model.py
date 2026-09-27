@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Щотижневий walk-forward на weekly_panel_h{H}.csv.gz.
+Щотижневий walk-forward на data/raw/raw_crypto_weekly_panel.csv.gz.
 
 Перший рік (2021) - лише навчання. Далі кожні 4 тижні модель
 перенавчається на всіх тижнях до поточного (експандне вікно) з embargo в
@@ -46,21 +46,23 @@ RAW_FEATURES = [
     "trailing_return_7d", "trailing_return_30d", "trailing_return_90d",
     "trailing_volatility_7d", "trailing_volatility_30d", "avg_quote_volume_30d",
     "trailing_volume_trend", "volume_7d_vs_30d", "drawdown_from_high_180d",
-    "max_daily_return_30d", "rsi_14", "macd_hist_12_26_9", "bollinger_pctb_20",
+    "max_daily_return_30d", "rsi_14", "macd_hist_norm", "bollinger_pctb_20",
     "btc_corr_90d", "btc_beta_90d", "coin_age_days",
     "relative_strength_vs_btc_90d", "relative_strength_vs_btc_30d",
 ]
 MARKET_FEATURES = ["btc_trailing_return_30d", "btc_trailing_return_90d", "btc_rsi_14"]
 CAT_FEATURES = ["sector", "market_regime"]
 XS_FEATURES = [f"{c}_xs" for c in RAW_FEATURES]
-TARGET = "beat_checkpoint_median"
+TARGET = "beat_market"
 
 MODEL_PARAMS = dict(learning_rate=0.05, max_iter=300, max_leaf_nodes=31,
                     min_samples_leaf=200, l2_regularization=1.0, random_state=SEED)
 
 
 def load(horizon):
-    df = pd.read_csv(ROOT / f"weekly_panel_h{horizon}.csv.gz", parse_dates=["checkpoint"])
+    df = pd.read_csv(ROOT.parent / "data" / "raw" / "raw_crypto_weekly_panel.csv.gz",
+                     parse_dates=["checkpoint"])
+    df["sector"] = df["sector"].fillna("Other")
     df["avg_quote_volume_30d"] = np.log1p(df["avg_quote_volume_30d"])
     grouped = df.groupby("checkpoint")
     for c in RAW_FEATURES:
@@ -111,7 +113,7 @@ def main():
         test["p_raw_w"] = fit_predict(train, test, raw_numeric, w.values)
         test["p_xs_w"] = fit_predict(train, test, xs_numeric, w.values)
         chunks.append(test[["checkpoint", "symbol", "sector", "market_regime", "avg_quote_volume_30d",
-                            "forward_return", "btc_forward_return", "excess_return",
+                            "forward_return", "btc_forward_return", "excess_return_vs_btc",
                             "trailing_volatility_30d", "coin_age_days",
                             "p_raw", "p_xs", "p_raw_w", "p_xs_w"]])
         if i % 10 == 0:

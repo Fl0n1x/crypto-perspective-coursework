@@ -1,0 +1,15 @@
+,rank_IC
+trailing_volatility_30d,-0.1801
+coin_age_days,0.1619
+drawdown_from_high_180d,0.0989
+btc_corr_90d,0.091
+sector_avg_trailing_return_30d,0.0625
+bollinger_pctb_20,-0.0542
+macd_hist_12_26_9,-0.0524
+trailing_volume_trend,-0.0439
+avg_quote_volume_30d,-0.0422
+trailing_return_90d,0.0405
+relative_strength_vs_btc_90d,0.0405
+rsi_14,-0.0327
+trailing_return_30d,0.0136
+momentum_acceleration,-0.0092
