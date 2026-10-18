@@ -62,8 +62,13 @@ MODEL_PARAMS = dict(learning_rate=0.05, max_iter=300, max_leaf_nodes=31,
 def load(horizon):
     df = pd.read_csv(ROOT.parent / "data" / "raw" / "raw_crypto_weekly_panel.csv.gz",
                      parse_dates=["checkpoint"])
+    # ті самі правила структурного очищення, що й у курсовій роботі
+    df = df[(df["missing_days_in_window"] < 3) & (df["symbol"] != "LUNAUSDT")].copy()
     df["sector"] = df["sector"].fillna("Other")
     df["avg_quote_volume_30d"] = np.log1p(df["avg_quote_volume_30d"])
+    for days in (30, 90):
+        df[f"relative_strength_vs_btc_{days}d"] = (df[f"trailing_return_{days}d"]
+                                                   - df[f"btc_trailing_return_{days}d"])
     grouped = df.groupby("checkpoint")
     for c in RAW_FEATURES:
         # ранговий z-score стійкіший за звичайний до мем-пампів у хвостах

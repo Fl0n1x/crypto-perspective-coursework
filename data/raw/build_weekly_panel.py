@@ -91,7 +91,29 @@ def daily_features(df, btc_ret, horizon):
     last_real = d["close"].last_valid_index()
     fwd[d.index + pd.Timedelta(days=horizon) > last_real] = np.nan
     f["forward_return"] = fwd
+
+    # технічний індикатор якості: скільки днів без торгів було у вікні
+    # [t0 - 180 днів, t0 + horizon], яке охоплюють ознаки й ціль; пропущені дні
+    # вище заповнено останньою відомою ціною, тож при довгій паузі ознаки й
+    # ціль можуть порівнювати ціни різних активів (редомінація, новий токен)
+    missing = d["close"].isna().astype(int)
+    window = 180 + horizon + 1
+    f["missing_days_in_window"] = (missing.rolling(window, min_periods=1).sum()
+                                   .shift(-horizon).fillna(0))
     return f
+
+
+def price_breaks(symbol, df, min_gap=3):
+    idx = df.index
+    gaps = pd.Series((idx[1:] - idx[:-1]).days - 1, index=idx[1:])
+    rows = []
+    for resume, gap in gaps[gaps >= min_gap].items():
+        before = df["close"].loc[:resume].iloc[-2]
+        rows.append({"symbol": symbol, "останній день до паузи": (resume - pd.Timedelta(days=gap + 1)).date(),
+                     "відновлення торгів": resume.date(), "днів без торгів": int(gap),
+                     "ціна до": before, "ціна після": df.loc[resume, "close"],
+                     "зміна, разів": round(df.loc[resume, "close"] / before, 4)})
+    return rows
 
 
 def main():
@@ -117,7 +139,9 @@ def main():
         "btc_forward_return": btc_at["forward_return"].values,
     })
 
-    join_audit, frames = [], []
+    join_audit, frames, breaks = [], [], []
+    audit = {"short_history_coins": 0, "candidate": 0, "young": 0, "no_target": 0,
+             "no_history": 0}
     for m in manifest:
         symbol = m["symbol"]
         if m.get("error") or symbol == "BTCUSDT":
@@ -133,10 +157,18 @@ def main():
             continue
         df = bp.load_klines(symbol)
         if df is None or len(df) < MIN_AGE_DAYS + horizon:
+            audit["short_history_coins"] += 1
             continue
+        breaks += price_breaks(symbol, df)
         f = daily_features(df, btc_ret, horizon).reindex(checkpoints)
-        f = f[(f["coin_age_days"] >= MIN_AGE_DAYS) & f["forward_return"].notna()
-              & f["trailing_return_90d"].notna()]
+        alive = f["coin_age_days"].notna()
+        old_enough = alive & (f["coin_age_days"] >= MIN_AGE_DAYS)
+        has_target = old_enough & f["forward_return"].notna()
+        audit["candidate"] += int(alive.sum())
+        audit["young"] += int((alive & ~old_enough).sum())
+        audit["no_target"] += int((old_enough & ~has_target).sum())
+        audit["no_history"] += int((has_target & f["trailing_return_90d"].isna()).sum())
+        f = f[has_target & f["trailing_return_90d"].notna()]
         if f.empty:
             continue
         f = f.rename_axis("checkpoint").reset_index()
@@ -145,11 +177,27 @@ def main():
 
     pd.DataFrame(join_audit).to_csv(RAW.parent / "join_audit_weekly.csv", index=False,
                                     encoding="utf-8")
+    pd.DataFrame(breaks).to_csv(RAW.parent / "price_breaks_weekly.csv", index=False,
+                                encoding="utf-8")
 
     panel = pd.concat(frames, ignore_index=True).merge(btc_info, on="checkpoint")
+    before_btc = len(panel)
     panel = panel[panel["btc_forward_return"].notna()]
-    panel["relative_strength_vs_btc_30d"] = panel["trailing_return_30d"] - panel["btc_trailing_return_30d"]
-    panel["relative_strength_vs_btc_90d"] = panel["trailing_return_90d"] - panel["btc_trailing_return_90d"]
+    pd.DataFrame([
+        {"етап": "монети з історією коротшою за 105 днів (виключено повністю)",
+         "кількість": audit["short_history_coins"], "одиниця": "монет"},
+        {"етап": "пари монета-тиждень, коли монета вже торгувалась", "кількість": audit["candidate"],
+         "одиниця": "записів"},
+        {"етап": "вилучено: монета молодша за 98 днів (немає 90-денної історії для ознак)",
+         "кількість": audit["young"], "одиниця": "записів"},
+        {"етап": "вилучено: невідома ціль (немає ціни через 7 днів, розрив у даних біржі)",
+         "кількість": audit["no_target"], "одиниця": "записів"},
+        {"етап": "вилучено: немає ціни 90 днів тому (розрив у даних біржі)",
+         "кількість": audit["no_history"], "одиниця": "записів"},
+        {"етап": "вилучено: невідома дохідність BTC за тиждень", "кількість": before_btc - len(panel),
+         "одиниця": "записів"},
+        {"етап": "залишилось у сирій панелі", "кількість": len(panel), "одиниця": "записів"},
+    ]).to_csv(RAW.parent / "build_audit_weekly.csv", index=False, encoding="utf-8")
     panel["excess_return_vs_btc"] = panel["forward_return"] - panel["btc_forward_return"]
 
     by_cp = panel.groupby("checkpoint")["forward_return"]
