@@ -20,7 +20,9 @@ import pandas as pd
 RAW = Path(__file__).parent
 KLINES_DIR = RAW / "binance_klines"
 CATEGORIES_DIR = RAW / "coingecko_categories"
-OUT_DIR = RAW.parent  # data/
+# місячна панель - перша версія роботи, збережена для історії в legacy/monthly;
+# курсова використовує тижневу панель з build_weekly_panel.py
+OUT_DIR = RAW.parent.parent / "legacy" / "monthly"
 
 HORIZON_DAYS = 60
 TRAIL_SHORT = 30
@@ -258,9 +260,9 @@ def main():
     print(panel.isna().sum()[panel.isna().sum() > 0].to_string())
 
     panel_out = panel.sort_values(["symbol", "checkpoint"]).reset_index(drop=True)
-    panel_out.to_csv(OUT_DIR / "raw" / "raw_crypto_perspective_panel.csv", index=False, encoding="utf-8")
+    panel_out.to_csv(OUT_DIR / "raw_crypto_perspective_panel.csv", index=False, encoding="utf-8")
     print()
-    print("Збережено:", OUT_DIR / "raw" / "raw_crypto_perspective_panel.csv")
+    print("Збережено:", OUT_DIR / "raw_crypto_perspective_panel.csv")
 
 
 if __name__ == "__main__":

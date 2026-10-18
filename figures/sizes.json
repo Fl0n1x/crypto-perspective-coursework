@@ -1,0 +1,202 @@
+{
+ "setup": {
+  "width_cm": 2.06,
+  "height_cm": 0.46,
+  "font_pt_approx": 10.0
+ },
+ "load": {
+  "width_cm": 7.52,
+  "height_cm": 2.33,
+  "font_pt_approx": 10.0
+ },
+ "info": {
+  "width_cm": 12.82,
+  "height_cm": 17.89,
+  "font_pt_approx": 10.0
+ },
+ "profile": {
+  "width_cm": 16.21,
+  "height_cm": 17.13,
+  "font_pt_approx": 10.0
+ },
+ "duplicates": {
+  "width_cm": 15.15,
+  "height_cm": 4.15,
+  "font_pt_approx": 10.0
+ },
+ "domain": {
+  "width_cm": 9.43,
+  "height_cm": 4.28,
+  "font_pt_approx": 10.0
+ },
+ "breaks": {
+  "width_cm": 16.91,
+  "height_cm": 7.8,
+  "font_pt_approx": 10.0
+ },
+ "audit": {
+  "width_cm": 17.0,
+  "height_cm": 5.49,
+  "font_pt_approx": 8.0
+ },
+ "cleaning": {
+  "width_cm": 17.0,
+  "height_cm": 3.64,
+  "font_pt_approx": 8.4
+ },
+ "control": {
+  "width_cm": 13.46,
+  "height_cm": 12.85,
+  "font_pt_approx": 10.0
+ },
+ "save_clean": {
+  "width_cm": 11.33,
+  "height_cm": 1.38,
+  "font_pt_approx": 10.0
+ },
+ "split": {
+  "width_cm": 13.94,
+  "height_cm": 0.95,
+  "font_pt_approx": 10.0
+ },
+ "split_checks": {
+  "width_cm": 17.0,
+  "height_cm": 5.11,
+  "font_pt_approx": 9.2
+ },
+ "describe": {
+  "width_cm": 17.0,
+  "height_cm": 8.74,
+  "font_pt_approx": 9.3
+ },
+ "skew": {
+  "width_cm": 17.0,
+  "height_cm": 8.81,
+  "font_pt_approx": 9.6
+ },
+ "dist_plots": {
+  "width_cm": 17.0,
+  "height_cm": 5.55,
+  "font_pt_approx": 8.4
+ },
+ "sector_ct": {
+  "width_cm": 12.98,
+  "height_cm": 9.4,
+  "font_pt_approx": 10.0
+ },
+ "missing": {
+  "width_cm": 17.0,
+  "height_cm": 2.69,
+  "font_pt_approx": 9.7
+ },
+ "outliers": {
+  "width_cm": 17.0,
+  "height_cm": 7.12,
+  "font_pt_approx": 8.3
+ },
+ "extremes": {
+  "width_cm": 15.64,
+  "height_cm": 4.15,
+  "font_pt_approx": 10.0
+ },
+ "h1": {
+  "width_cm": 16.86,
+  "height_cm": 3.22,
+  "font_pt_approx": 10.0
+ },
+ "h2": {
+  "width_cm": 17.0,
+  "height_cm": 2.68,
+  "font_pt_approx": 9.6
+ },
+ "corr": {
+  "width_cm": 17.0,
+  "height_cm": 15.99,
+  "font_pt_approx": 8.3
+ },
+ "assoc": {
+  "width_cm": 17.0,
+  "height_cm": 10.85,
+  "font_pt_approx": 9.0
+ },
+ "leakage": {
+  "width_cm": 17.0,
+  "height_cm": 15.99,
+  "font_pt_approx": 8.3
+ },
+ "engineer": {
+  "width_cm": 15.8,
+  "height_cm": 2.71,
+  "font_pt_approx": 10.0
+ },
+ "usefulness": {
+  "width_cm": 12.98,
+  "height_cm": 3.28,
+  "font_pt_approx": 10.0
+ },
+ "feature_sets": {
+  "width_cm": 11.98,
+  "height_cm": 2.33,
+  "font_pt_approx": 10.0
+ },
+ "base_pipeline": {
+  "width_cm": 13.04,
+  "height_cm": 7.02,
+  "font_pt_approx": 10.0
+ },
+ "final_pipeline": {
+  "width_cm": 15.57,
+  "height_cm": 1.41,
+  "font_pt_approx": 10.0
+ },
+ "cv": {
+  "width_cm": 17.0,
+  "height_cm": 6.16,
+  "font_pt_approx": 9.6
+ },
+ "cv_compare": {
+  "width_cm": 17.0,
+  "height_cm": 2.06,
+  "font_pt_approx": 8.3
+ },
+ "final_fit": {
+  "width_cm": 10.49,
+  "height_cm": 0.95,
+  "font_pt_approx": 10.0
+ },
+ "test_metrics": {
+  "width_cm": 5.88,
+  "height_cm": 2.76,
+  "font_pt_approx": 10.0
+ },
+ "confusion": {
+  "width_cm": 11.61,
+  "height_cm": 12.29,
+  "font_pt_approx": 10.0
+ },
+ "errors": {
+  "width_cm": 8.85,
+  "height_cm": 7.34,
+  "font_pt_approx": 10.0
+ },
+ "summary": {
+  "width_cm": 7.83,
+  "height_cm": 3.31,
+  "font_pt_approx": 10.0
+ },
+ "practical": {
+  "width_cm": 13.04,
+  "height_cm": 5.53,
+  "font_pt_approx": 10.0
+ },
+ "equity": {
+  "width_cm": 17.0,
+  "height_cm": 7.46,
+  "font_pt_approx": 8.3
+ },
+ "insample": {
+  "width_cm": 10.34,
+  "height_cm": 0.92,
+  "font_pt_approx": 10.0
+ }
+}
