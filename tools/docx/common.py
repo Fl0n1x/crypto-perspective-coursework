@@ -30,6 +30,9 @@ _SIZES = json.loads((FIG / "sizes.json").read_text(encoding="utf-8"))
 _NB = json.loads(NOTEBOOK.read_text(encoding="utf-8"))
 _CODE = {c["metadata"]["tag"]: "".join(c["source"]) for c in _NB["cells"]
          if c["cell_type"] == "code"}
+TOPIC_TAIL = "МАШИННОГО НАВЧАННЯ (НА ПРИКЛАДІ ПРОГНОЗУВАННЯ ВІДНОСНОЇ ТИЖНЕВОЇ ДИНАМІКИ ЦІН КРИПТОВАЛЮТ)"
+PLAN_DATES = ["26.09.2026", "03.10.2026", "14.10.2026", "28.10.2026", "11.11.2026",
+              "25.11.2026", "06.12.2026", "11.12.2026", "14.12.2026"]
 FIG_COUNTER = {}
 USED_TAGS = []
 
@@ -131,12 +134,23 @@ def _fix_title_page(doc, body_start):
             continue
         if t.startswith("Завдання прийнято до виконання") or t.startswith("Керівник роботи"):
             p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        if t.startswith("МАШИННОГО НАВЧАННЯ (НА ПРИКЛАДІ"):
+            for r in p.runs[1:]:
+                r._r.getparent().remove(r._r)
+            p.runs[0].text = TOPIC_TAIL
         for r in p.runs:
             r.font.color.rgb = BLACK
             if "РОЗВ'ЯЗАННЯ" in r.text:
                 r.text = r.text.replace("РОЗВ'ЯЗАННЯ", "РОЗВ’ЯЗАННЯ")
         _zero_spacing(p.paragraph_format, line=p.paragraph_format.line_spacing or 1.5)
     for t in doc.tables[:1]:
+        for row, date in zip(t.rows[1:], PLAN_DATES):
+            cell = row.cells[1].paragraphs[0]
+            cell.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            if cell.runs:
+                cell.runs[0].text = date
+            else:
+                cell.add_run(date)
         for row in t.rows:
             for cell in row.cells:
                 for cp in cell.paragraphs:
